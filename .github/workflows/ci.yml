@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - test-spa-404
   pull_request:
 
 env:
