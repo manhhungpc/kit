@@ -1087,7 +1087,7 @@ async function load_root_error_page({ status, error, url, route }) {
 			route: null
 		});
 	} catch (err) {
-		const result = await get_navigation_result_from_branch({
+		return await get_navigation_result_from_branch({
 			url,
 			params,
 			branch: [root_error],
@@ -1095,8 +1095,6 @@ async function load_root_error_page({ status, error, url, route }) {
 			error,
 			route: null
 		});
-
-		return result;
 	}
 }
 
